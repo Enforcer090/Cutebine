@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nana ❤️</title>
+<style>
+body{font-family:Arial,sans-serif;background:#ff0a3d;margin:0;text-align:center;overflow-x:hidden}
+.header{background:linear-gradient(135deg,#ff4d7a,#cc0033);padding:70px 20px;position:relative;overflow:hidden}
+.header h1{font-size:3.5rem;margin:0;color:white;text-shadow:0 0 20px white;position:relative;z-index:2}
+.header p{color:#ffccd5;position:relative;z-index:2;font-size:1.1rem}
+.big-dim-heart{position:absolute;color:rgba(255,255,255,0.18);font-size:90px;animation:dimming 3s ease-in-out infinite;line-height:0.9}
+@keyframes dimming{0%,100%{opacity:0.15;transform:scale(1)}50%{opacity:0.4;transform:scale(1.15)}}
+.card{background:white;max-width:600px;margin:20px auto;padding:25px;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,0.2);position:relative;z-index:2}
+img.main{width:90%;max-width:380px;height:450px;object-fit:cover;border-radius:20px;margin:10px;border:5px solid #ff4d7a;box-shadow:0 10px 30px rgba(255,0,64,0.3)}
+
+/* GIFT BOXES */
+.gift-box{width:120px;height:120px;background:white;border-radius:20px;display:inline-block;margin:12px;cursor:pointer;position:relative;box-shadow:0 8px 20px rgba(0,0,0,0.15);transition:0.3s;vertical-align:top}
+.gift-box:hover{transform:translateY(-8px) scale(1.05)}
+.gift-box .lid{font-size:60px;line-height:120px}
+.gift-box .inside{display:none;position:absolute;inset:0;background:linear-gradient(135deg,#fff,#ffdde6);border-radius:20px;padding:10px;font-size:13px;color:#cc0033;font-weight:bold;flex-direction:column;align-items:center;justify-content:center}
+.gift-box.open .inside{display:flex}
+.gift-box.open .lid{display:none}
+
+/* JOKES */
+.joke-card{background:#fff0f3;padding:15px;border-radius:12px;margin:10px 0;text-align:left;border-left:5px solid #ff4d7a;cursor:pointer}
+.joke-card b{color:#cc0033}
+
+/* FLOATING */
+.float-el{position:fixed;pointer-events:none;z-index:10;animation:floatUp 5s linear forwards}
+@keyframes floatUp{0%{transform:translateY(100vh) rotate(0deg);opacity:1}100%{transform:translateY(-20vh) rotate(360deg);opacity:0}}
+
+.friend-text p{background:#fff0f3;padding:12px;border-radius:10px;margin:8px 0;border-left:4px solid #ff4d7a;text-align:left}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="big-dim-heart" style="left:10%;top:10%">❤️<br><span style="font-size:20px">♡ ♡ ♡<br>♡ ♡ ♡</span></div>
+  <div class="big-dim-heart" style="right:10%;top:15%;animation-delay:0.5s">💖<br><span style="font-size:18px">♡ ♡ ♡</span></div>
+  <div class="big-dim-heart" style="left:15%;bottom:10%;animation-delay:1s">💗<br><span style="font-size:16px">♡ ♡ ♡</span></div>
+  <div class="big-dim-heart" style="right:15%;bottom:15%;animation-delay:1.5s">❤️</div>
+  <h1>Hey Nana! ❤️</h1>
+  <p>My Favorite Friend</p>
+  <p>♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡</p>
+</div>
+
+<audio id="music" loop controls style="margin:15px;position:relative;z-index:2">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+  <h2 style="color:#cc0033">📸 My Cutest Friend</h2>
+  <!-- ONLY ONE IMAGE -->
+  <img src="nana.jpg" class="main" onerror="this.src='astridah.jpg'">
+  <p style="color:#ff4d7a;font-weight:bold">Only ONE photo - upload as nana.jpg</p>
+</div>
+
+<div class="card friend-text">
+  <h2 style="color:#cc0033">Why You Are Awesome, Nana</h2>
+  <p>😊 Your smile makes everyone happy</p>
+  <p>💛 You are kind, calm and easy to talk to</p>
+  <p>✨ You are real and genuine</p>
+  <p>🌸 You have your own cool style</p>
+</div>
+
+<!-- SPECIAL GIFTS -->
+<div class="card" style="background:linear-gradient(135deg,#ff4d7a,#cc0033);color:white">
+  <h2>🎁 Tap The Gifts, Nana! 🎁</h2>
+  <p style="margin-bottom:15px">Each gift has a surprise!</p>
+  
+  <div class="gift-box" onclick="this.classList.toggle('open')">
+    <div class="lid">🎁</div>
+    <div class="inside">💖<br>You deserve<br>all the happiness<br>in the world!</div>
+  </div>
+  <div class="gift-box" onclick="this.classList.toggle('open')">
+    <div class="lid">🎁</div>
+    <div class="inside">⭐<br>You are a<br>STAR!<br>Shine bright, Nana!</div>
+  </div>
+  <div class="gift-box" onclick="this.classList.toggle('open')">
+    <div class="lid">🎁</div>
+    <div class="inside">🌸<br>Stay cute!<br>Stay awesome!<br>Stay YOU!</div>
+  </div>
+  <div class="gift-box" onclick="this.classList.toggle('open')">
+    <div class="lid">🎁</div>
+    <div class="inside">💌<br>Big hug for<br>my favorite<br>friend Nana!</div>
+  </div>
+</div>
+
+<!-- JOKES TO MAKE HER SMILE -->
+<div class="card">
+  <h2 style="color:#cc0033">😂 Tap For Jokes - To Make You Smile</h2>
+  
+  <div class="joke-card" onclick="this.querySelector('.ans').style.display='block'">
+    <b>Q: Why did the cookie go to the hospital?</b><br>
+    <span class="ans" style="display:none">A: Because it felt crumby! 🍪😂 But you are NOT crumby, Nana, you are amazing!</span>
+    <br><small style="color:#999">Tap to see answer</small>
+  </div>
+
+  <div class="joke-card" onclick="this.querySelector('.ans').style.display='block'">
+    <b>Q: What do you call a bear with no teeth?</b><br>
+    <span class="ans" style="display:none">A: A gummy bear! 🐻 Just like you are sweet like a gummy bear, Nana!</span>
+    <br><small style="color:#999">Tap to see answer</small>
+  </div>
+
+  <div class="joke-card" onclick="this.querySelector('.ans').style.display='block'">
+    <b>Q: Why is Nana like WiFi?</b><br>
+    <span class="ans" style="display:none">A: Because when you are around, everything connects and feels better! 📶💖</span>
+    <br><small style="color:#999">Tap to see answer</small>
+  </div>
+
+  <div class="joke-card" onclick="this.querySelector('.ans').style.display='block'">
+    <b>Q: Are you a magician, Nana?</b><br>
+    <span class="ans" style="display:none">A: Because whenever I see your photo, everyone else disappears! ✨ (Okay that was cheesy but you smiled right? 😁)</span>
+    <br><small style="color:#999">Tap to see answer</small>
+  </div>
+</div>
+
+<div class="card" style="background:#1a1a1a;color:white">
+  <p style="font-size:1.8rem">Made with ❤️ for Nana</p>
+  <p style="color:#ff8fab;letter-spacing:4px;margin-top:10px">♡ ♡ ♡ ⭐ ❤️ ⭐ ♡ ♡ ♡</p>
+  <p style="margin-top:15px">You made my day brighter just by existing 😊</p>
+</div>
+
+<script>
+// Floating Stars and Hearts
+setInterval(()=>{
+  const els = ['❤️','💖','💗','⭐','🌟','✨','♡','💕'];
+  let e = document.createElement('div');
+  e.className='float-el';
+  e.innerHTML = els[Math.floor(Math.random()*els.length)];
+  e.style.left = Math.random()*100+'vw';
+  e.style.fontSize = (15+Math.random()*25)+'px';
+  document.body.appendChild(e);
+  setTimeout(()=>e.remove(),5000);
+},250);
+</script>
+
+</body>
+</html>
